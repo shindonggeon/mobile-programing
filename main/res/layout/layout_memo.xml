@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableRow android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/textViewMemo1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/textViewMemo2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/textViewMemo3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="8sp" />
+    </TableRow>
+    <TableRow android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/textViewMemo4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/textViewMemo5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/textViewMemo6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="8sp" />
+    </TableRow>
+    <TableRow android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/textViewMemo7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/textViewMemo8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/textViewMemo9"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="8sp" />
+    </TableRow>
+
+</TableLayout>

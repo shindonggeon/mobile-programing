@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="1dp"
+    android:layout_marginTop="1dp"
+    android:layout_marginEnd="1dp"
+    android:layout_marginBottom="1dp"
+    android:orientation="vertical"
+    android:padding="16dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="10dp"
+        android:text="Memo"
+        android:textSize="18sp" />
+
+    <TableLayout
+        android:id="@+id/memo_numpad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+
+            <ToggleButton
+                android:id="@+id/memo_1"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/toggle_memo_selector"
+                android:tag="1"
+                android:textColor="@android:color/black"
+                android:textOff="1"
+                android:textOn="1" />
+
+            <ToggleButton
+                android:id="@+id/memo_2"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/toggle_memo_selector"
+                android:tag="2"
+                android:textColor="@android:color/black"
+                android:textOff="2"
+                android:textOn="2" />
+
+            <ToggleButton
+                android:id="@+id/memo_3"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/toggle_memo_selector"
+                android:tag="3"
+                android:textColor="@android:color/black"
+                android:textOff="3"
+                android:textOn="3" />
+        </TableRow>
+
+        <TableRow>
+
+            <ToggleButton
+                android:id="@+id/memo_4"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/toggle_memo_selector"
+                android:tag="4"
+                android:textColor="@android:color/black"
+                android:textOff="4"
+                android:textOn="4" />
+
+            <ToggleButton
+                android:id="@+id/memo_5"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/toggle_memo_selector"
+                android:tag="5"
+                android:textColor="@android:color/black"
+                android:textOff="5"
+                android:textOn="5" />
+
+            <ToggleButton
+                android:id="@+id/memo_6"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/toggle_memo_selector"
+                android:tag="6"
+                android:textColor="@android:color/black"
+                android:textOff="6"
+                android:textOn="6" />
+        </TableRow>
+
+        <TableRow>
+
+            <ToggleButton
+                android:id="@+id/memo_7"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/toggle_memo_selector"
+                android:tag="7"
+                android:textColor="@android:color/black"
+                android:textOff="7"
+                android:textOn="7" />
+
+            <ToggleButton
+                android:id="@+id/memo_8"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/toggle_memo_selector"
+                android:tag="8"
+                android:textColor="@android:color/black"
+                android:textOff="8"
+                android:textOn="8" />
+
+            <ToggleButton
+                android:id="@+id/memo_9"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/toggle_memo_selector"
+                android:tag="9"
+                android:textColor="@android:color/black"
+                android:textOff="9"
+                android:textOn="9" />
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_delete"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="0dp"
+            android:onClick="handleDelete"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:text="DELETE"
+            android:textColor="@color/purple_primary" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="0dp"
+            android:onClick="handleCancel"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:text="CANCEL"
+            android:textColor="@color/purple_primary" />
+
+        <Button
+            android:id="@+id/btn_ok"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="?attr/colorPrimary"
+            android:onClick="handleOk"
+            android:text="OK"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>
